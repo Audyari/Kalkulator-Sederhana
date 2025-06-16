@@ -63,26 +63,24 @@
 **Status:** ⏳ To Do | 🔄 In Progress | ✅ Done
 
 ### 3.1 Menu System
-- [ ] **Create Main Menu** *(30 menit)*
-  - Display operation choices (1-4)
-  - Show welcome message
-  - Format menu dengan ASCII art (optional)
-
-- [ ] **Implement Menu Selection** *(20 menit)*
-  - Get user input untuk pilihan menu
-  - Validate input (1-4 only)
-  - Handle invalid selections
+- [x] **Create Main Menu** *(30 menit)*
+  - [x] Tampilan menu yang lebih baik dengan header
+  - [x] Daftar operasi yang jelas
+  - [x] Pilihan untuk keluar
+- [x] **Implement Menu Selection** *(20 menit)*
+  - [x] Validasi input menu
+  - [x] Penanganan error untuk pilihan tidak valid
+  - [x] Loop untuk memungkinkan beberapa operasi
 
 ### 3.2 Input Handling
-- [ ] **Get Numbers from User** *(25 menit)*
-  - Input angka pertama
-  - Input angka kedua
-  - Convert string to float/int
-
-- [ ] **Display Results** *(15 menit)*
-  - Format output yang readable
-  - Show calculation process
-  - Display final result
+- [x] **Get Numbers from User** *(25 menit)*
+  - [x] Validasi input angka
+  - [x] Pesan error yang informatif
+  - [x] Input yang lebih aman dengan penanganan error
+- [x] **Display Results** *(15 menit)*
+  - [x] Format output yang rapi
+  - [x] Tampilkan operasi dan hasil dengan jelas
+  - [x] Jeda sebelum membersihkan layar
 
 ### 3.3 Program Flow
 - [ ] **Create Main Loop** *(20 menit)*
