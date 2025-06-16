@@ -1,0 +1,15 @@
+# Dependencies for Kalkulator Sederhana
+# Install dengan: pip install -r requirements.txt
+
+# Daftar package yang digunakan
+# PyInstaller untuk membuat executable
+pyinstaller>=5.0
+
+# Package standar Python yang digunakan:
+# - math
+# - os
+# - platform
+# - datetime
+# - typing (sudah termasuk dalam Python 3.5+)
+
+# Catatan: Tidak ada dependensi eksternal yang diperlukan selain PyInstaller

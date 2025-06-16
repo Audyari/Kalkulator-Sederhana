@@ -144,16 +144,21 @@
 **Status:** ⏳ To Do | 🔄 In Progress | ✅ Done
 
 ### 5.1 Final Check
-- [ ] **Code Review** *(30 menit)*
-  - Periksa kualitas kode
-  - Optimasi jika diperlukan
-  - Perbaiki bug yang ditemukan
+- [x] **Code Review** *(30 menit)*
+  - [x] Periksa kualitas kode
+  - [x] Optimasi jika diperlukan
+  - [x] Perbaiki bug yang ditemukan
+  - [x] Tambahkan dokumentasi lengkap
+  - [x] Perbaiki struktur kode
+  - [x] Tambahkan type hints
+  - [x] Perbaiki penamaan variabel
+  - [x] Optimasi logika program
 
 ### 5.2 Packaging
 - [ ] **Buat Executable** *(30 menit)*
-  - Gunakan PyInstaller
-  - Test di environment yang bersih
-  - Pastikan semua dependensi terinstall
+  - [ ] Gunakan PyInstaller
+  - [ ] Test di environment yang bersih
+  - [ ] Pastikan semua dependensi terinstall
 
 ### 5.3 Deployment
 - [ ] **Upload ke GitHub** *(15 menit)*
@@ -197,4 +202,82 @@
 
 ---
 
-**Happy Coding! 🎉**
+# Kalkulator Sederhana
+
+Kalkulator berbasis command line dengan fitur dasar matematika dan riwayat perhitungan.
+
+## 🚀 Fitur
+- Operasi dasar: +, -, *, /
+- Akar kuadrat
+- Pangkat
+- Persentase
+- Riwayat 10 perhitungan terakhir
+- Tampilan yang user-friendly
+- Validasi input yang kuat
+
+## 🛠️ Instalasi
+
+### Persyaratan
+- Python 3.8 atau lebih baru
+- pip (package manager Python)
+
+### Langkah-langkah
+
+1. **Clone repository**
+   ```bash
+   git clone [URL_REPOSITORY]
+   cd Kalkulator-Sederhana
+   ```
+
+2. **Buat virtual environment (disarankan)**
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\activate  # Windows
+   source venv/bin/activate  # Linux/Mac
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## 🚀 Cara Menjalankan
+
+### Mode Pengembangan
+```bash
+python calculator.py
+```
+
+### Build Executable
+1. Pastikan PyInstaller sudah terinstall:
+   ```bash
+   pip install pyinstaller
+   ```
+
+2. Jalankan script build:
+   ```bash
+   .\build.bat  # Windows
+   # atau
+   bash build.sh  # Linux/Mac
+   ```
+
+3. File executable akan tersedia di folder `build/`
+
+## 📦 Package Structure
+```
+Kalkulator-Sederhana/
+├── calculator.py      # Kode utama kalkulator
+├── build/             # Folder untuk file hasil build
+├── requirements.txt   # Daftar dependensi
+└── README.md          # Dokumentasi
+```
+
+## 🤝 Berkontribusi
+1. Fork repository
+2. Buat branch fitur (`git checkout -b fitur/namafitur`)
+3. Commit perubahan (`git commit -m 'Menambahkan fitur xyz'`)
+4. Push ke branch (`git push origin fitur/namafitur`)
+5. Buat Pull Request
+
+## 📜 Lisensi
+Dilisensikan di bawah [MIT License](LICENSE)
