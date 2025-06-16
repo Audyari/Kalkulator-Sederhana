@@ -83,10 +83,18 @@
   - [x] Jeda sebelum membersihkan layar
 
 ### 3.3 Program Flow
-- [ ] **Create Main Loop** *(20 menit)*
-  - Implement "Continue?" functionality
-  - Exit option
-  - Clear screen between calculations
+- [x] **Create Main Loop** *(20 menit)*
+  - [x] Loop untuk menjalankan kalkulator berulang kali
+  - [x] Opsi untuk melanjutkan atau keluar
+  - [x] Membersihkan layar setelah setiap operasi
+- [x] **Error Handling** *(20 menit)*
+  - [x] Menangani input yang tidak valid
+  - [x] Menangani operasi matematika yang tidak valid
+  - [x] Pesan error yang informatif
+- [x] **User Experience** *(15 menit)*
+  - [x] Tampilan yang konsisten
+  - [x] Feedback yang jelas untuk setiap aksi
+  - [x] Kemudahan navigasi
 
 **Phase 3 Total Estimate:** 2 jam
 
