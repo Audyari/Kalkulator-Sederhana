@@ -273,11 +273,41 @@ Kalkulator-Sederhana/
 ```
 
 ## 🤝 Berkontribusi
-1. Fork repository
+
+Kontribusi sangat diterima! Berikut cara berkontribusi:
+
+1. Fork repository ini
 2. Buat branch fitur (`git checkout -b fitur/namafitur`)
-3. Commit perubahan (`git commit -m 'Menambahkan fitur xyz'`)
+3. Commit perubahan Anda (`git commit -m 'Menambahkan fitur xyz'`)
 4. Push ke branch (`git push origin fitur/namafitur`)
 5. Buat Pull Request
 
+## 📝 Panduan Kontribusi
+
+1. Pastikan kode mengikuti PEP 8
+2. Tambahkan komentar yang jelas
+3. Update dokumentasi jika diperlukan
+4. Test perubahan Anda
+5. Pastikan semua test berhasil
+
+## 🐛 Melaporkan Masalah
+
+Jika menemukan bug atau memiliki saran:
+1. Cek dulu di [Issues](https://github.com/username/Kalkulator-Sederhana/issues)
+2. Jika belum ada, buat issue baru
+3. Jelaskan masalah atau saran dengan jelas
+4. Sertakan langkah-langkah untuk mereproduksi masalah (jika ada bug)
+
 ## 📜 Lisensi
-Dilisensikan di bawah [MIT License](LICENSE)
+
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
+
+## 👏 Ucapan Terima Kasih
+
+- Terima kasih kepada semua kontributor
+- Terima kasih kepada komunitas Python
+- Terima kasih telah menggunakan kalkulator ini!
+
+---
+
+Dibuat dengan ❤️ oleh Audyari Wiyono
