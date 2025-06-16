@@ -1,6 +1,10 @@
 import math
 import os
 import platform
+from datetime import datetime
+
+# Inisialisasi variabel global untuk riwayat perhitungan
+riwayat = []
 
 def clear_screen():
     """Membersihkan layar terminal"""
@@ -22,7 +26,22 @@ def tampilkan_menu():
     print("5. Akar Kuadrat (√)")
     print("6. Pangkat (^)")
     print("7. Persentase (%)")
-    print("8. Keluar")
+    print("8. Lihat Riwayat")
+    print("9. Keluar")
+
+def tampilkan_riwayat():
+    clear_screen()
+    print("\n" + "="*50)
+    print("RIWAYAT PERHITUNGAN".center(50))
+    print("="*50)
+    
+    if not riwayat:
+        print("\nBelum ada riwayat perhitungan.")
+    else:
+        for i, hitung in enumerate(riwayat, 1):
+            print(f"\n{i}. {hitung['waktu']} - {hitung['operasi']} = {hitung['hasil']}")
+    
+    input("\nTekan Enter untuk kembali ke menu utama...")
 
 def dapatkan_angka(pesan):
     while True:
@@ -38,6 +57,17 @@ def tampilkan_hasil(operasi, hasil):
     print("\n" + "="*50)
     print(f"HASIL: {operasi} = {hasil}")
     print("="*50)
+
+def tambah_ke_riwayat(operasi, hasil):
+    """Menambahkan perhitungan ke dalam riwayat"""
+    riwayat.append({
+        'waktu': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        'operasi': operasi,
+        'hasil': hasil
+    })
+    # Batasi riwayat hanya 10 entri terakhir
+    if len(riwayat) > 10:
+        riwayat.pop(0)
 
 def tanya_lanjut():
     while True:
@@ -80,14 +110,18 @@ def main():
     while True:
         try:
             tampilkan_menu()
-            pilihan = input("\nMasukkan pilihan (1-8): ")
+            pilihan = input("\nMasukkan pilihan (1-9): ")
             
-            if pilihan == '8':
+            if pilihan == '9':
                 print("\nTerima kasih telah menggunakan kalkulator ini!")
                 break
                 
+            if pilihan == '8':  # Tampilkan riwayat
+                tampilkan_riwayat()
+                continue
+                
             if pilihan not in ('1', '2', '3', '4', '5', '6', '7'):
-                print("\nError: Pilihan tidak valid. Silakan pilih 1-8.")
+                print("\nError: Pilihan tidak valid. Silakan pilih 1-9.")
                 input("\nTekan Enter untuk melanjutkan...")
                 continue
                 
@@ -95,29 +129,43 @@ def main():
                 if pilihan == '5':  # Akar kuadrat
                     num = dapatkan_angka("\nMasukkan angka: ")
                     hasil = akar(num)
-                    tampilkan_hasil(f"√{num}", hasil)
+                    operasi = f"√{num}"
+                    tampilkan_hasil(operasi, hasil)
+                    tambah_ke_riwayat(operasi, hasil)
                 else:
                     num1 = dapatkan_angka("\nMasukkan angka pertama: ")
                     num2 = dapatkan_angka("Masukkan angka kedua: ")
                     
                     if pilihan == '1':
                         hasil = tambah(num1, num2)
-                        tampilkan_hasil(f"{num1} + {num2}", hasil)
+                        operasi = f"{num1} + {num2}"
+                        tampilkan_hasil(operasi, hasil)
+                        tambah_ke_riwayat(operasi, hasil)
                     elif pilihan == '2':
                         hasil = kurang(num1, num2)
-                        tampilkan_hasil(f"{num1} - {num2}", hasil)
+                        operasi = f"{num1} - {num2}"
+                        tampilkan_hasil(operasi, hasil)
+                        tambah_ke_riwayat(operasi, hasil)
                     elif pilihan == '3':
                         hasil = kali(num1, num2)
-                        tampilkan_hasil(f"{num1} × {num2}", hasil)
+                        operasi = f"{num1} × {num2}"
+                        tampilkan_hasil(operasi, hasil)
+                        tambah_ke_riwayat(operasi, hasil)
                     elif pilihan == '4':
                         hasil = bagi(num1, num2)
-                        tampilkan_hasil(f"{num1} ÷ {num2}", hasil)
+                        operasi = f"{num1} ÷ {num2}"
+                        tampilkan_hasil(operasi, hasil)
+                        tambah_ke_riwayat(operasi, hasil)
                     elif pilihan == '6':
                         hasil = pangkat(num1, num2)
-                        tampilkan_hasil(f"{num1} ^ {num2}", hasil)
+                        operasi = f"{num1} ^ {num2}"
+                        tampilkan_hasil(operasi, hasil)
+                        tambah_ke_riwayat(operasi, hasil)
                     elif pilihan == '7':
                         hasil = persen(num1, num2)
-                        tampilkan_hasil(f"{num1}% dari {num2}", hasil)
+                        operasi = f"{num1}% dari {num2}"
+                        tampilkan_hasil(operasi, hasil)
+                        tambah_ke_riwayat(operasi, hasil)
                 
                 if not tanya_lanjut():
                     print("\nTerima kasih telah menggunakan kalkulator ini!")

@@ -103,7 +103,14 @@
 ## 🛡️ Phase 4: ERROR HANDLING & VALIDATION
 **Status:** ⏳ To Do | 🔄 In Progress | ✅ Done
 
-### 4.1 Input Validation
+### 4.1 Fitur Tambahan
+- [x] **Riwayat Perhitungan** *(45 menit)*
+  - [x] Menyimpan 10 perhitungan terakhir
+  - [x] Menampilkan riwayat dengan timestamp
+  - [x] Menu untuk melihat riwayat perhitungan
+  - [x] Format tampilan yang rapi dan mudah dibaca
+
+### 4.2 Input Validation
 - [ ] **Validate Numeric Input** *(30 menit)*
   - Check if input is number
   - Handle letters/special characters
@@ -114,7 +121,7 @@
   - Handle empty input
   - Re-prompt on invalid choice
 
-### 4.2 Math Error Handling
+### 4.3 Math Error Handling
 - [ ] **Handle Division by Zero** *(15 menit)*
   - Proper error message
   - Allow user to retry
@@ -125,7 +132,7 @@
   - Handle overflow cases
   - Set reasonable limits if needed
 
-### 4.3 Exception Handling
+### 4.4 Exception Handling
 - [ ] **Implement Try-Catch Blocks** *(20 menit)*
   - Wrap risky operations
   - Graceful error handling
@@ -135,157 +142,40 @@
 
 ---
 
-## ⚡ Phase 5: ENHANCED FEATURES (Optional)
+## 🚀 Phase 5: DEPLOYMENT & FINALIZATION
 **Status:** ⏳ To Do | 🔄 In Progress | ✅ Done
 
-### 5.1 Additional Operations
-- [ ] **Add Power/Exponent Function** *(20 menit)*
-  - `a ** b` operation
-  - Add to menu as option 5
+### 5.1 Final Check
+- [ ] **Code Review** *(30 menit)*
+  - Periksa kualitas kode
+  - Optimasi jika diperlukan
+  - Perbaiki bug yang ditemukan
 
-- [ ] **Add Square Root Function** *(20 menit)*
-  - Import math module
-  - Handle negative numbers
+### 5.2 Packaging
+- [ ] **Buat Executable** *(30 menit)*
+  - Gunakan PyInstaller
+  - Test di environment yang bersih
+  - Pastikan semua dependensi terinstall
 
-- [ ] **Add Percentage Calculation** *(15 menit)*
-  - Percentage of number
-  - Percentage increase/decrease
+### 5.3 Deployment
+- [ ] **Upload ke GitHub** *(15 menit)*
+  - Update README
+  - Tambahkan screenshot
+  - Update requirements.txt
 
-### 5.2 Memory Features
-- [ ] **Add Calculation History** *(45 menit)*
-  - Store last 5 calculations
-  - Display history option
-  - Clear history function
-
-- [ ] **Add Memory Storage** *(30 menit)*
-  - Store current result
-  - Recall stored number
-  - Clear memory function
+### 5.4 Dokumentasi Final
+- [ ] **Buat User Manual** *(45 menit)*
+  - Panduan instalasi lengkap
+  - Panduan penggunaan
+  - Troubleshooting
 
 **Phase 5 Total Estimate:** 2 jam
 
 ---
 
-## 🧪 Phase 6: TESTING & DEBUGGING
-**Status:** ⏳ To Do | 🔄 In Progress | ✅ Done
+## 📊 Total Estimasi Waktu: 7.5 jam
 
-### 6.1 Functional Testing
-- [ ] **Test All Math Operations** *(30 menit)*
-  - Positive numbers
-  - Negative numbers
-  - Decimal numbers
-  - Large numbers
-
-- [ ] **Test Error Scenarios** *(20 menit)*
-  - Division by zero
-  - Invalid inputs
-  - Empty inputs
-  - Special characters
-
-### 6.2 User Experience Testing
-- [ ] **Test Program Flow** *(20 menit)*
-  - Complete calculation cycles
-  - Exit functionality
-  - Continue functionality
-  - Menu navigation
-
-- [ ] **Get User Feedback** *(30 menit)*
-  - Ask friend/colleague to test
-  - Note confusing parts
-  - Gather improvement suggestions
-
-**Phase 6 Total Estimate:** 1.5 jam
-
----
-
-## 📝 Phase 7: CODE QUALITY & DOCUMENTATION
-**Status:** ⏳ To Do | 🔄 In Progress | ✅ Done
-
-### 7.1 Code Optimization
-- [ ] **Add Comments** *(20 menit)*
-  - Function descriptions
-  - Complex logic explanations
-  - Code section headers
-
-- [ ] **Code Refactoring** *(30 menit)*
-  - Remove duplicate code
-  - Improve variable names
-  - Organize functions logically
-
-- [ ] **Follow Python Conventions** *(15 menit)*
-  - PEP 8 style guide
-  - Proper naming conventions
-  - Consistent indentation
-
-### 7.2 Documentation
-- [ ] **Write README.md** *(30 menit)*
-  - Project description
-  - How to run
-  - Features list
-  - Screenshots/examples
-
-- [ ] **Add Inline Documentation** *(15 menit)*
-  - Docstrings for functions
-  - Usage examples
-  - Parameter descriptions
-
-**Phase 7 Total Estimate:** 2 jam
-
----
-
-## 🚀 Phase 8: DEPLOYMENT & SHARING
-**Status:** ⏳ To Do | 🔄 In Progress | ✅ Done
-
-### 8.1 Final Preparations
-- [ ] **Final Testing** *(20 menit)*
-  - Complete end-to-end test
-  - Check all features work
-  - Verify error handling
-
-- [ ] **Code Cleanup** *(15 menit)*
-  - Remove debug prints
-  - Clean up test code
-  - Final formatting check
-
-### 8.2 Publishing
-- [ ] **Push to GitHub** *(10 menit)*
-  - Final commit dengan message yang jelas
-  - Push semua changes
-  - Create release tag v1.0
-
-- [ ] **Create Portfolio Entry** *(30 menit)*
-  - Add to personal portfolio
-  - Write project description
-  - Include lessons learned
-
-- [ ] **Share Project** *(15 menit)*
-  - Post di LinkedIn (optional)
-  - Share dengan teman/komunitas
-  - Get feedback untuk project selanjutnya
-
-**Phase 8 Total Estimate:** 1.5 jam
-
----
-
-## 📊 PROJECT SUMMARY
-
-**Total Estimated Time:** 12-15 jam  
-**Timeline:** 2-4 hari (3-4 jam per hari)  
-**Skill Level:** Beginner  
-**Technologies:** Python, Git, GitHub  
-
-### Key Learning Outcomes:
-- ✅ Python functions & basic syntax
-- ✅ User input handling
-- ✅ Error handling & validation
-- ✅ Code organization & documentation
-- ✅ Version control dengan Git
-- ✅ Project management & task breaking
-
-### Next Project Suggestions:
-1. **Guess the Number Game** - Add random numbers & loops
-2. **To-Do List App** - File handling & data persistence
-3. **Weather App** - API integration & JSON handling
+## 🎉 SELAMAT! Kalkulator Sederhana Anda siap digunakan!
 
 ---
 
