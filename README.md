@@ -111,37 +111,35 @@
   - [x] Format tampilan yang rapi dan mudah dibaca
 
 ### 4.2 Input Validation
-- [ ] **Validate Numeric Input** *(30 menit)*
-  - Check if input is number
-  - Handle letters/special characters
-  - Provide clear error messages
-
-- [ ] **Validate Menu Choice** *(15 menit)*
-  - Ensure choice is 1-4
-  - Handle empty input
-  - Re-prompt on invalid choice
+- [x] **Validate Numeric Input** *(30 menit)*
+  - [x] Cek input kosong
+  - [x] Validasi format angka
+  - [x] Batasi jumlah angka desimal
+  - [x] Batasi rentang angka
+  - [x] Pesan error yang informatif
+  - [x] Batas maksimum percobaan
 
 ### 4.3 Math Error Handling
-- [ ] **Handle Division by Zero** *(15 menit)*
-  - Proper error message
-  - Allow user to retry
-  - Don't crash program
+- [x] **Handle Division by Zero** *(15 menit)*
+  - [x] Pesan error yang jelas
+  - [x] Kembali ke menu utama
+  - [x] Tidak menyebabkan program berhenti
 
-- [ ] **Handle Large Numbers** *(10 menit)*
-  - Test with very large numbers
-  - Handle overflow cases
-  - Set reasonable limits if needed
+- [x] **Handle Large Numbers** *(10 menit)*
+  - [x] Batasi input angka yang terlalu besar/kecil
+  - [x] Beri peringatan untuk pembulatan
+  - [x] Tangani overflow dengan baik
 
 ### 4.4 Exception Handling
-- [ ] **Implement Try-Catch Blocks** *(20 menit)*
-  - Wrap risky operations
-  - Graceful error handling
-  - User-friendly error messages
+- [x] **Implement Try-Catch Blocks** *(20 menit)*
+  - [x] Bungkus operasi berisiko
+  - [x] Tangani error dengan elegan
+  - [x] Pesan error yang ramah pengguna
+  - [x] Pastikan program tidak crash
 
 **Phase 4 Total Estimate:** 1.5 jam
 
 ---
-
 ## 🚀 Phase 5: DEPLOYMENT & FINALIZATION
 **Status:** ⏳ To Do | 🔄 In Progress | ✅ Done
 
