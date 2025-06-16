@@ -23,14 +23,14 @@
   - Buat file `README.md`
 
 ### 1.2 Version Control Setup
-- [ ] **Initialize Git Repository** *(10 menit)*
-  - `git init`
-  - Create `.gitignore` untuk Python
-  - First commit dengan project structure
-- [ ] **Create GitHub Repository** *(10 menit)*
-  - Buat repo di GitHub
-  - Connect local dengan remote
-  - Push initial commit
+- [x] **Initialize Git Repository** *(10 menit)*
+  - `git init` sudah dijalankan
+  - `.gitignore` untuk Python sudah dibuat
+  - First commit sudah dibuat
+- [x] **Create GitHub Repository** *(10 menit)*
+  - Repository sudah dibuat di GitHub
+  - Local repository sudah terhubung dengan remote
+  - Kode sudah di-push ke GitHub
 
 **Phase 1 Total Estimate:** 1 jam
 
@@ -40,39 +40,16 @@
 **Status:** ⏳ To Do | 🔄 In Progress | ✅ Done
 
 ### 2.1 Basic Math Functions
-- [ ] **Create Addition Function** *(15 menit)*
-  ```python
-  def add(a, b):
-      return a + b
-  ```
-  - Test dengan beberapa angka
-  - Print hasil untuk validasi
+- [x] **Implementasi Fungsi Dasar** *(30 menit)*
+  - [x] Penjumlahan
+  - [x] Pengurangan
+  - [x] Perkalian
+  - [x] Pembagian
+- [x] **Tambah Fungsi Lanjutan** *(20 menit)*
+  - [x] Akar kuadrat
+  - [x] Pangkat
+  - [x] Persentase
 
-- [ ] **Create Subtraction Function** *(15 menit)*
-  ```python
-  def subtract(a, b):
-      return a - b
-  ```
-  - Test dengan angka positif & negatif
-
-- [ ] **Create Multiplication Function** *(15 menit)*
-  ```python
-  def multiply(a, b):
-      return a * b
-  ```
-  - Test dengan decimal numbers
-
-- [ ] **Create Division Function** *(20 menit)*
-  ```python
-  def divide(a, b):
-      if b != 0:
-          return a / b
-      else:
-          return "Error: Division by zero"
-  ```
-  - Handle division by zero case
-
-### 2.2 Function Testing
 - [ ] **Test All Math Functions** *(20 menit)*
   - Buat test cases untuk setiap function
   - Validate hasil perhitungan manual
